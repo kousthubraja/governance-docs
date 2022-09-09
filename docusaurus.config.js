@@ -6,15 +6,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Solana Governance UI Docs",
-  tagline: "Solana Governance UI Documentation",
+  title: "Newrl Docs",
+  tagline: "Newrl Documentation",
   url: "https://docs.realms.today",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "Solana-labs", // Usually your GitHub org/user name.
-  projectName: "governance-docs", // Usually your repo name.
+  organizationName: "newrlfoundation", // Usually your GitHub org/user name.
+  projectName: "newrl-docs", // Usually your repo name.
 
   presets: [
     [
@@ -25,7 +25,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
           editUrl:
-            "https://github.com/solana-labs/governance-docs/tree/master",
+            "https://github.com/newrlfoundation/newrl-doc/tree/master",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -38,20 +38,20 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Governance UI",
+        title: "Newrl",
         logo: {
-          alt: "Governance UI",
-          src: "img/solana-logo.svg",
+          alt: "Newrl",
+          src: "https://newrl.net/img/newrl_logo.png",
         },
         items: [
           {
             type: "doc",
-            docId: "DAO-Management/get-started",
+            docId: "About/welcome",
             position: "left",
-            label: "Tutorial",
+            label: "Docs",
           },
           {
-            href: "https://github.com/solana-labs/governance-docs/",
+            href: "https://github.com/newrlfoundation/newrl-docs/",
             label: "Docs GitHub",
             position: "right",
           },
@@ -65,15 +65,11 @@ const config = {
             items: [
               {
                 label: "Discord",
-                href: "https://discord.gg/VsPbrK2hJk",
+                href: "https://discord.com/invite/bVh5d3UYwf",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/solana",
-              },
-              {
-                label: "Forums",
-                href: "https://forums.solana.com",
+                href: "https://twitter.com/newrl_media",
               },
             ],
           },
@@ -82,12 +78,12 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/solana-labs/governance-ui",
+                href: "https://github.com/newrlfoundation/newrl-docs",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Solana Foundation`,
+        copyright: `Copyright © ${new Date().getFullYear()} Newrl Foundation`,
       },
       prism: {
         theme: lightCodeTheme,
